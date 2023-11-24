@@ -38,11 +38,9 @@ class Connection {
     /*Função para dar pegar o primeiro já que current, first e pop não funcionaram*/
     public function getFirst($results)
     {
-        $obj=null;
-        foreach($results as $objT){
-            $obj=$objT;
-        }
-        return $obj;
+        foreach($results as $obj){
+            return $obj;
+        }   
     }
 
 }
